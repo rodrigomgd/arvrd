@@ -1,0 +1,101 @@
+@font-face{
+    font-family: 'Chalet';
+    src: url('../fonts/Chalet.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Chalet-London';
+    src: url('../fonts/ChaletLondonNineteenEighty.ttf') format('truetype');
+}
+
+
+//cores
+$preto: #000;
+$branco: #fff;
+$vermelho: red;
+//./cores
+
+body{
+font-family:'Chalet', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Chalet', Arial, Helvetica, sans-serif;
+}
+.section-bg-1{
+    color:white;
+    background-attachment: fixed;
+    background-image: url('../img/parallax-bg.png');
+    background-color: $preto;
+    width: 100%;
+}
+
+.description{
+    background-color: rgba($preto,0.5);
+    bottom:0;
+    color:#fff;
+    height: 20%;
+    left:15px;
+    right: 15px;
+    position: absolute;
+    transition: 1s;
+    border-radius: 5px;
+    padding-top: 7%;
+    &:hover{
+        height: 100%;
+        padding-top: 50%;
+    }
+}
+
+.hr-25{
+width: 50px;
+display: inline-block;
+background-color: $branco;
+margin-bottom: 5px;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+//MAPA
+.map{
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+#map {
+	height: 100%;
+}
+//FIM MAPA
+
+//BACKGROUNDS
+.bg-black{
+    background-color: lighten($preto,10%);
+    color:$branco;
+}
+
+//TEXTOS
+
+.text-gray{
+    color: lighten($preto, 50%);
+}
+
+.subtitle{
+    font-family: 'Chalet-London';
+}
+//FIM TEXTOS
+
+//FOOTER
+footer{
+    font-family: 'Chalet-London';
+    font-weight: normal;
+}
+.copyright{
+    background-color: $preto;
+    margin: 0;
+    a{
+        color: $vermelho;
+        outline: none;
+    }
+}
+
+//.FOOTER
