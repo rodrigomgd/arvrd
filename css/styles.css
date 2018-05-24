@@ -3,14 +3,31 @@
   src: url("../fonts/Chalet.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'Chalet-London';
-  src: url("../fonts/ChaletLondonNineteenEighty.ttf") format("truetype"); }
+  font-family: 'Chalet-Comprime';
+  src: url("../fonts/ChaletComprimeCologneEighty.ttf") format("truetype"); }
 
 body {
   font-family: 'Chalet', Arial, Helvetica, sans-serif; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Chalet', Arial, Helvetica, sans-serif; }
+  font-family: 'Chalet-Comprime', Arial, Helvetica, sans-serif; }
+
+h2 {
+  font-size: 3rem; }
+
+.fixed-height {
+  height: 60px; }
+
+.mini-logo {
+  display: block;
+  height: 9rem;
+  width: 6rem; }
+
+@media (max-width: 991px) {
+  .fixed-height {
+    height: auto; }
+  .mini-logo {
+    display: none; } }
 
 .section-bg-1 {
   color: white;
@@ -54,6 +71,9 @@ h1, h2, h3, h4, h5 {
   background-color: #1a1a1a;
   color: #fff; }
 
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+
 .text-gray {
   color: gray; }
 
@@ -61,10 +81,11 @@ h1, h2, h3, h4, h5 {
   font-family: 'Chalet-London'; }
 
 footer {
-  font-family: 'Chalet-London';
-  font-weight: normal; }
+  font-family: 'Chalet-Comprime';
+  font-size: 1.4rem; }
 
 .copyright {
+  font-size: 1rem;
   background-color: #000;
   margin: 0; }
   .copyright a {
