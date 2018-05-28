@@ -72,10 +72,14 @@ h2 {
   color: #fff; }
 
 .bg-dark {
-  background-color: rgba(0, 0, 0, 0.5) !important; }
+  background-color: rgba(0, 0, 0, 0.8) !important; }
 
 .text-gray {
   color: gray; }
+
+.underlined-title {
+  font-size: 3rem;
+  border-bottom: 2px solid #000; }
 
 .subtitle {
   font-family: 'Chalet-London'; }

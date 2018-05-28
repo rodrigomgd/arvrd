@@ -2,7 +2,7 @@
 
 var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
-    args = ['**/*.html','**/js/*.js','**/css/*.css'];
+    args = ['**/*.php','**/js/*.js','**/css/*.css'];
 
 gulp.task('serve',()=>{
     browserSync.init({

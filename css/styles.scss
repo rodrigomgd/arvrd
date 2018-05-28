@@ -97,12 +97,16 @@ margin-left: 10px;
 }
 
 .bg-dark{
-    background-color: rgba($preto,0.5) !important;
+    background-color: rgba($preto,0.8) !important;
 }
 //TEXTOS
 
 .text-gray{
     color: lighten($preto, 50%);
+}
+.underlined-title{
+    font-size: 3rem;
+    border-bottom: 2px solid $preto;
 }
 
 .subtitle{
