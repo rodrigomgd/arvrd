@@ -1,14 +1,14 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
  <div class="container fixed-height">
-     <img src="img/flag.png"class="img-fluid mini-logo mt-5" alt="Mini Logo Aura Verde">
+     <img src="img/flag.png"class="img-fluid mini-logo mt-6 mr-3" alt="Mini Logo Aura Verde">
        <a class="navbar-brand" href="#"><img src="img/lettering.png" alt="Texto aura-verde"></a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-         <ul class="navbar-nav  ">
+         <ul class="navbar-nav">
            <li class="nav-item">
-             <a class="nav-link" href="/">HOME</a>
+             <a class="nav-link" href="/auraverde">HOME</a>
            </li>
            <li class="nav-item">
              <a class="nav-link" href="sobre.php">SOBRE</a>

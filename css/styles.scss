@@ -18,13 +18,18 @@ body{
 font-family:'Chalet', Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4, h5{
+//FONTS
+h1, h2, h3, h4, h5,.f-ChaletComprime{
     font-family: 'Chalet-Comprime', Arial, Helvetica, sans-serif;
 }
-
+.f-ChaletComprime{
+    font-size: 1.3rem;
+}
 h2{
     font-size: 3rem;
 }
+//.FONTS
+
 //nav
 .fixed-height{
 height: 60px;
@@ -33,6 +38,15 @@ height: 60px;
     display: block;
     height: 9rem;
     width: 6rem;
+}
+.navbar-nav{
+    font-family: "Chalet-Comprime";
+    font-size: 1.5rem;
+    
+    .nav-item{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 }
 @media(max-width:991px){
     .fixed-height{
@@ -78,6 +92,14 @@ margin-right: 10px;
 margin-left: 10px;
 }
 
+.mt-6{
+    margin-top: 4rem;
+}
+
+.carousel-inner, .carousel-inner a {
+    font-family: "Chalet-Comprime";
+    font-size: 1.6rem;
+}
 //MAPA
 .map{
     width: 100%;
@@ -99,8 +121,8 @@ margin-left: 10px;
 .bg-dark{
     background-color: rgba($preto,0.8) !important;
 }
-//TEXTOS
 
+//TEXTOS
 .text-gray{
     color: lighten($preto, 50%);
 }
@@ -113,6 +135,27 @@ margin-left: 10px;
     font-family: 'Chalet-London';
 }
 //FIM TEXTOS
+
+
+//FORM
+.form-bordered{
+
+    input, textarea{
+        background-color: transparent;
+        border: 2px solid $branco;
+        border-radius: 0.7rem;
+
+        &:focus{
+            background-color: transparent;
+            outline: none;
+        }
+        &::placeholder{
+            color: $branco;
+        }
+    }
+
+}
+//FORM
 
 //FOOTER
 footer{
@@ -128,7 +171,6 @@ footer{
         outline: none;
     }
 }
-
 //.FOOTER
 
 

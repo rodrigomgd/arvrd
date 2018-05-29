@@ -30,43 +30,50 @@
 <!--/HEADER -->
 
 <!--PRODUTOS -->
-
-
-        <div id="carouselExampleIndicators" class="carousel slide pt-5" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
+        <div id="ProductCarousel" class="carousel slide pt-5 mt-5" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <?php for($i=1;$i<6;$i++) : ?>
+                <div class="carousel-item <?= $active = ($i==1) ? "active" : "" ?>">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 text-center">
                                 <img class="img-fluid" src="img/pasta-de-berinjela.png" alt="Produto">
                             </div>
-                            <div class="col-md-6">
-                                <h2>PASTA DE BERINJELA</h2>
+                            <div class="col-md-5 pt-3 text-justify">
+                                <h2>PASTA DE BERINJELA <?= $i ?></h2>
                                 <p>INGREDIENTES</p>
                                 <p>BERINJELA, TOMATE ITALIANO, CEBOLA, PIMENTÃO VERDE, AZEITONA, ORÉGANO, PASTA DE ALHO (SAL E ALHO) E AZEITE DE OLIVA.</p>
                                 <p>NÃO CONTÉM GLÚTEN.</p>
                                 <p>150G</p>
-                                <a href="#" class="btn btn-outline-danger">COMPRAR</a>
+                                <a href="#" class="btn btn-outline-danger pl-5 pr-5">COMPRAR</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <?php endfor; ?>
             </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+            <a class="carousel-control-prev" href="#ProductCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#ProductCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
-
+        <div class="container pt-5 pb-5">
+            <div class="row justify-content-center f-ChaletComprime">
+                <?php for($i=1;$i<6;$i++) : ?>
+                <div data-target="#ProductCarousel" data-slide-to= <?= $i ?> class="col-2 col-sm text-center m-3">
+                <img src="img/pasta-de-berinjela.png" class="img-fluid"alt="imagem de produto">
+                <span class="description"> PASTA DE BERINGELA</span>
+                <!-- <li data-target="#ProductCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#ProductCarousel" data-slide-to="1"></li>
+                <li data-target="#ProductCarousel" data-slide-to="2"></li> -->
+                </div>
+            <?php endfor; ?>
+            </div>
+        </div>
 <!--./PRODUTOS -->
 
 <!--CONTATO-->
