@@ -32,7 +32,7 @@
 <!--PRODUTOS -->
         <div id="ProductCarousel" class="carousel slide pt-5 mt-5" data-ride="carousel">
             <div class="carousel-inner">
-                <?php for($i=1;$i<6;$i++) : ?>
+                <?php for($i=0;$i<5;$i++) : ?>
                 <div class="carousel-item <?= $active = ($i==1) ? "active" : "" ?>">
                     <div class="container">
                         <div class="row">
@@ -61,15 +61,12 @@
                 <span class="sr-only">Próximo</span>
             </a>
         </div>
-        <div class="container pt-5 pb-5">
-            <div class="row justify-content-center f-ChaletComprime">
-                <?php for($i=1;$i<6;$i++) : ?>
-                <div data-target="#ProductCarousel" data-slide-to= <?= $i ?> class="col-2 col-sm text-center m-3">
-                <img src="img/pasta-de-berinjela.png" class="img-fluid"alt="imagem de produto">
-                <span class="description"> PASTA DE BERINGELA</span>
-                <!-- <li data-target="#ProductCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#ProductCarousel" data-slide-to="1"></li>
-                <li data-target="#ProductCarousel" data-slide-to="2"></li> -->
+        <div class="container pt-5 f-ChaletComprime pb-5 text-center">
+            <h2>MAIS PRODUTOS</h2>
+            <div class="row justify-content-around m-3">
+                <?php for($i=0;$i<5;$i++) : ?>
+                <div data-target="#ProductCarousel" data-slide-to= <?= $i ?> class="m-3 img-product-col position-relative">
+                <img src="img/pasta-de-berinjela.png" class="img-fluid" alt="imagem de produto">
                 </div>
             <?php endfor; ?>
             </div>

@@ -9,7 +9,7 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   
-    <title>Sobre nós - Aura Verde</title>
+    <title>Sobre Nós - Aura Verde</title>
 </head>
 <body>
 

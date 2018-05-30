@@ -101,6 +101,10 @@ h2 {
 .subtitle {
   font-family: 'Chalet-London'; }
 
+.img-product-col {
+  width: 150px;
+  height: 180px; }
+
 .form-bordered input, .form-bordered textarea {
   background-color: transparent;
   border: 2px solid #fff;
