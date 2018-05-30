@@ -76,7 +76,7 @@
 <!-- END PRODUTOS-->
 
 <!--CONTATO-->
- <?php include_once "template-parts/contato.php" ?>
+ <?php include_once "template-parts/content-contato.php" ?>
 <!-- FIM CONTATO-->
 
 <!-- Map Section -->
