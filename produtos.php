@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.slim.min.js"></script>
@@ -30,27 +31,30 @@
 <!--/HEADER -->
 
 <!--PRODUTOS -->
-        <div id="ProductCarousel" class="carousel slide pt-5 mt-5" data-ride="carousel">
+        <?php $produtos = json_decode(file_get_contents('json/produtos.json'),true); 
+              $i = 0;  ?>
+
+        <div id="ProductCarousel" class="carousel slide pt-5 mt-5 pb-3" data-ride="carousel">
             <div class="carousel-inner">
-                <?php for($i=0;$i<5;$i++) : ?>
-                <div class="carousel-item <?= $active = ($i==1) ? "active" : "" ?>">
+                <?php foreach($produtos as $produto) : ?>
+                <div class="carousel-item <?= $active = ($i==0) ? "active" : "" ?>">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 text-center">
-                                <img class="img-fluid" src="img/pasta-de-berinjela.png" alt="Produto">
+                                <img class="img-fluid" src="<?= $produto['img'] ?>" alt="Produto">
                             </div>
                             <div class="col-md-5 pt-3 text-justify">
-                                <h2>PASTA DE BERINJELA <?= $i ?></h2>
+                                <h2><?= $produto['nome'] ?></h2>
                                 <p>INGREDIENTES</p>
-                                <p>BERINJELA, TOMATE ITALIANO, CEBOLA, PIMENTÃO VERDE, AZEITONA, ORÉGANO, PASTA DE ALHO (SAL E ALHO) E AZEITE DE OLIVA.</p>
-                                <p>NÃO CONTÉM GLÚTEN.</p>
-                                <p>150G</p>
-                                <a href="#" class="btn btn-outline-danger pl-5 pr-5">COMPRAR</a>
+                                <p><?= $produto['ingredientes'] ?></p>
+                                <p><?= $produto['obs'] ?></p>
+                                <p><?= $produto['peso'] ?></p>
+                                <a href="<?= $produto['url'] ?>" class="btn btn-outline-danger pl-5 pr-5">COMPRAR</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <?php endfor; ?>
+                <?php $i++; endforeach; ?>
             </div>
             <a class="carousel-control-prev" href="#ProductCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -61,14 +65,15 @@
                 <span class="sr-only">Próximo</span>
             </a>
         </div>
-        <div class="container pt-5 f-ChaletComprime pb-5 text-center">
+        <div class="container pt-5 f-ChaletComprime text-center">
             <h2>MAIS PRODUTOS</h2>
-            <div class="row justify-content-around m-3">
-                <?php for($i=0;$i<5;$i++) : ?>
-                <div data-target="#ProductCarousel" data-slide-to= <?= $i ?> class="m-3 img-product-col position-relative">
-                <img src="img/pasta-de-berinjela.png" class="img-fluid" alt="imagem de produto">
+            <div class="row justify-content-around pr-4 pl-4">
+                <?php $i=0; foreach($produtos as $produto) : ?>
+                <div data-target="#ProductCarousel" data-slide-to= <?= $i ?> class="img-product-col position-relative mb-5">
+                <img src="<?= $produto['img'] ?>" class="img-fluid" alt="imagem de produto">
+                <span class="img-product-name"><?= $produto['nome'] ?></span>
                 </div>
-            <?php endfor; ?>
+            <?php $i++; endforeach; ?>
             </div>
         </div>
 <!--./PRODUTOS -->

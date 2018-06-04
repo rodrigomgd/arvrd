@@ -1,9 +1,10 @@
-<section class="container-fluid section-bg-1">
+<section class="container-fluid p-5 section-bg-1">
       <div class="container p-5 text-center">
         <img src="img/ramo.png"  class="img-fluid" alt="">
         <h2>CONTATO</h2>
-        <hr class="hr-25"><span class="subtitle">ENTRE EM</span> <hr class="hr-25">
-
+        <div class="pl-5 pr-5">
+          <hr class="hr-25"><span class="subtitle">ENTRE EM</span> <hr class="hr-25">
+        </div>
         <form class="form-bordered" action="">
         <div class="row mt-5">
                 <div class="col-md">

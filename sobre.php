@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.slim.min.js"></script>
@@ -37,14 +38,14 @@
 
     <section class="container-fluid section-bg-1">
         <div class="container p-5 text-center">
-            <div class="p-5">
+            <div class="pt-5">
                 <h2>PROPÓSITO</h2>
-                <hr class="hr-25"><span class="subtitle"> CONHEÇA </span> <hr class="hr-25">
-                <div class="row p-5">
-                <p>
+                <hr class="hr-25"><span class=""> CONHEÇA </span> <hr class="hr-25">
+                <div class="row pt-3">
+                <p class="">
                     ASSIM COMO TUDO NA VIDA, PRA ALGO COMEÇAR É PRECISO DAR O PRIMEIRO PASSO. O NOSSO COMEÇOU QUANDO DECIDIMOS LARGAR TUDO PARA CORRER ATRÁS DOS NOSSOS SONHOS. NÃO QUERÍAMOS APENAS FAZER MOLHOS E ANTEPASTOS, QUERÍAMOS FAZER PARTE DOS MOMENTOS DAS PESSOAS. OS PRODUTOS AURA VERDE SURGIRAM DA VONTADE DE INSTIGAR AS PESSOAS A EXPRESSAR O QUE ELAS TÊM DE MELHOR E FAZER COM QUE ELAS CURTISSEM CADA MOMENTO COMO SE FOSSE O ÚNICO, ATRAVÉS DA GASTRONOMIA.
                 </p>
-                <p>
+                <p class="h6">
                     NOSSOS PRODUTOS FORAM PENSADOS PARA QUE VOCÊ PUDESSE JOGAR SUA CRIATIVIDADE EM CIMA DELES, INVENTANDO PRATOS, RECEITAS E MAIS O QUE BEM ENTENDESSE. QUEREMOS OFERECER A VOCÊ A POSSIBILIDADE DA DESCOBERTA E A EXPERIÊNCIA DE DESFRUTAR CADA INSTANTE, SEJA ELE RESERVADO OU COM A GALERA.
                 </p>
                 </div>

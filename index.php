@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.png" />
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   
@@ -45,7 +46,7 @@
 <!-- End Slider-->
 
 <!-- O QUE NOS INSPIRA-->
-  <?php include_once "template-parts/o-que-nos-inspira.php" ?>
+  <?php $show_link = true; include_once "template-parts/o-que-nos-inspira.php" ?>
 <!--END  O QUE NOS INSPIRA-->
 <!--SECTION GASTRONOMIA-->
     <section class="container-fluid section-bg-1">
@@ -53,7 +54,7 @@
             <div class="row">
                 <div class="col text-center">
                     <h2>ACREDITAMOS QUE A GASTRONOMIA É A MELHOR FORMA DE EXPRESSÃO</h2>
-                    <p class="lead">É ATRAVÉS DELA QUE AS PESSOAS PODEM CONHECER O MUNDO E A SI MESMAS </p>
+                    <p class="">É ATRAVÉS DELA QUE AS PESSOAS PODEM CONHECER O MUNDO E A SI MESMAS </p>
                     <div class="p-5">
                             <a href="/saiba-mais" class="btn btn-lg btn-outline-danger ">SAIBA MAIS</a>
                           </div>
@@ -65,12 +66,12 @@
 
 <!--PRODUTOS-->
     <div class="container p-5 text-center">
-        <h2 class="">PRODUTOS</h2>
-        <p class="lead">CONHEÇA</p>
-        <div class="row">
-          <div class="col-lg col-md-4 m-5"><a href="#" class="d-block"><img class="img-fluid" src="img/pasta-de-berinjela.png" alt="imagem pasta de beringela"><span class="description"> PASTA DE BERINGELA</span></a></div>
-          <div class="col-lg col-md-4 m-5"><a href="#" class="d-block"><img class="img-fluid" src="img/tomate-seco.png" alt="imagem tomate seco"><span class="description">TOMATE SECO </span></a></div>
-          <div class="col-lg col-md-4 m-5"><a href="#" class="d-block"><img class="img-fluid" src="img/molho-tomate.png" alt="imagem molho de tomate"><span class="description">MOLHO DE TOMATE </span></a></div>
+      <h2 class="">PRODUTOS</h2>
+      <hr class="hr-25 bg-black"><span>CONHEÇA</span><hr class="hr-25 bg-black">
+      <div class="row">
+        <div class="col-lg col-md-4 m-5"><a href="/produtos" class="d-block"><img class="img-fluid" src="img/pasta-de-berinjela.png" alt="imagem pasta de beringela"><span class="description"> PASTA DE BERINGELA</span></a></div>
+        <div class="col-lg col-md-4 m-5"><a href="/produtos" class="d-block"><img class="img-fluid" src="img/tomate-seco.png" alt="imagem tomate seco"><span class="description">TOMATE SECO </span></a></div>
+        <div class="col-lg col-md-4 m-5"><a href="/produtos" class="d-block"><img class="img-fluid" src="img/molho-tomate.png" alt="imagem molho de tomate"><span class="description">MOLHO DE TOMATE </span></a></div>
       </div>
     </div>
 <!-- END PRODUTOS-->

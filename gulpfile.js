@@ -25,8 +25,7 @@ const AUTOPREFIXER_BROWSERS = [
 
 gulp.task('serve',()=>{
     browserSync.init({
-        proxy:"localhost/auraverde",
-        stream:true
+        proxy:"localhost/auraverde"
     });
     gulp.watch(args).on('change',browserSync.reload);
 });

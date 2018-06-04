@@ -1,0 +1,26 @@
+[
+    {
+        "img": "img/pasta-de-berinjela.png",
+        "nome":"PASTA DE BERINGELA",
+        "ingredientes":"BERINJELA, TOMATE ITALIANO, CEBOLA, PIMENTÃO VERDE, AZEITONA, ORÉGANO, PASTA DE ALHO (SAL E ALHO) E AZEITE DE OLIVA.",
+        "obs":"NÃO CONTÉM GLÚTEN.",
+        "peso": "150G",
+        "url":"#"
+    },
+    {
+        "img": "img/molho-tomate.png",
+        "nome":"MOLHO DE TOMATE",
+        "ingredientes":"{{ ingredientes }}",
+        "obs":"NÃO CONTÉM GLÚTEN.",
+        "peso": "150G",
+        "url":"#"
+    },
+    {
+        "img": "img/tomate-seco.png",
+        "nome":"TOMATE SECO",
+        "ingredientes":"{{ ingredientes }}",
+        "obs":"NÃO CONTÉM GLÚTEN.",
+        "peso": "150G",
+        "url":"#"
+    }
+]
