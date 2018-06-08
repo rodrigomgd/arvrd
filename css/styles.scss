@@ -186,13 +186,13 @@ margin-left: 10px;
         background-color: transparent;
         border: 2px solid $branco;
         border-radius: 0.7rem;
-
+        color: $branco;
         &:focus{
             background-color: transparent;
             outline: none;
         }
         &::placeholder{
-            color: $branco;
+            color: rgba($branco,0.5);
         }
     }
 

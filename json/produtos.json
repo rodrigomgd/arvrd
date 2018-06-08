@@ -10,17 +10,17 @@
     {
         "img": "img/molho-tomate.png",
         "nome":"MOLHO DE TOMATE",
-        "ingredientes":"{{ ingredientes }}",
+        "ingredientes":"TOMATE ITALIANO, CEBOLA, PIMENTÃO VERDE, SAL, ORÉGANO E AZEITE DE OLIVA",
         "obs":"NÃO CONTÉM GLÚTEN.",
-        "peso": "150G",
+        "peso": "310G",
         "url":"#"
     },
     {
         "img": "img/tomate-seco.png",
         "nome":"TOMATE SECO",
-        "ingredientes":"{{ ingredientes }}",
+        "ingredientes":"TOMATE ITALIANO, AÇÚCAR, SAL, AZEITE DE OLIVA, VINAGRE BALSÂMICO, ORÉGANO E PASTA DE ALHO (SAL E ALHO).",
         "obs":"NÃO CONTÉM GLÚTEN.",
-        "peso": "150G",
+        "peso": "PESO LÍQUIDO: 158G PESO DRENADO: 100G",
         "url":"#"
     }
 ]

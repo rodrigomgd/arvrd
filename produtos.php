@@ -41,9 +41,9 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 text-center">
-                                <img class="img-fluid" src="<?= $produto['img'] ?>" alt="Produto">
+                                <img class="img-fluid mt-5 mb-5" src="<?= $produto['img'] ?>" alt="Produto">
                             </div>
-                            <div class="col-md-5 pt-3 text-justify">
+                            <div class="col-md-5 mt-5 text-justify">
                                 <h2><?= $produto['nome'] ?></h2>
                                 <p>INGREDIENTES</p>
                                 <p><?= $produto['ingredientes'] ?></p>
@@ -69,7 +69,7 @@
             <h2>MAIS PRODUTOS</h2>
             <div class="row justify-content-around pr-4 pl-4">
                 <?php $i=0; foreach($produtos as $produto) : ?>
-                <div data-target="#ProductCarousel" data-slide-to= <?= $i ?> class="img-product-col position-relative mb-5">
+                <div data-target="#ProductCarousel" data-slide-to=<?=$i?> class="img-product-col position-relative mb-5">
                 <img src="<?= $produto['img'] ?>" class="img-fluid" alt="imagem de produto">
                 <span class="img-product-name"><?= $produto['nome'] ?></span>
                 </div>

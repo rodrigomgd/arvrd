@@ -8,16 +8,17 @@
         <form class="form-bordered" action="">
         <div class="row mt-5">
                 <div class="col-md">
-                  <input class="form-control mb-4" type="text" placeholder="NOME">
-                  <input class="form-control mb-4" type="text" placeholder="ASSUNTO">
-                  <input class="form-control mb-4" type="text" placeholder="TELEFONE">
-                  <input class="form-control mb-4" type="email" placeholder="E-MAIL">
+                  <input id="name" class="form-control mb-4" type="text" placeholder="NOME">
+                  <input id="sub" class="form-control mb-4" type="text" placeholder="ASSUNTO">
+                  <input id="phone" class="form-control mb-4" type="text" placeholder="TELEFONE Ex: (55) 1234-5678">
+                  <input id="email" class="form-control mb-4" type="email" placeholder="E-MAIL">
                 </div>
                 <div class="col-md">
-                  <textarea class="form-control" rows="8" placeholder="MENSAGEM"></textarea>
+                  <textarea id="message" class="form-control" rows="8" placeholder="MENSAGEM"></textarea>
                 </div>
               </div>
               <button type="submit" class="btn btn-outline-danger btn-lg mt-3 pr-3 pl-3">ENVIAR</button>
             </form>
       </div>
     </section>
+    <script src="js/validation.js"></script>

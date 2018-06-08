@@ -140,12 +140,13 @@ h2 {
 .form-bordered input, .form-bordered textarea {
   background-color: transparent;
   border: 2px solid #fff;
-  border-radius: 0.7rem; }
+  border-radius: 0.7rem;
+  color: #fff; }
   .form-bordered input:focus, .form-bordered textarea:focus {
     background-color: transparent;
     outline: none; }
   .form-bordered input::placeholder, .form-bordered textarea::placeholder {
-    color: #fff; }
+    color: rgba(255, 255, 255, 0.5); }
 
 footer {
   font-family: 'Chalet-Comprime';

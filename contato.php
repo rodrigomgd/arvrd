@@ -30,5 +30,6 @@
 <?php include_once "template-parts/footer.php" ?>
 <!-- END FOOTER-->
 <script src="js/custom.js"></script>
+
 </body>
 </html>
