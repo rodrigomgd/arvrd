@@ -190,6 +190,7 @@ margin-left: 10px;
         &:focus{
             background-color: transparent;
             outline: none;
+            color: $branco;
         }
         &::placeholder{
             color: rgba($branco,0.5);

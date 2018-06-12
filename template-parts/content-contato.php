@@ -5,20 +5,20 @@
         <div class="pl-5 pr-5">
           <hr class="hr-25"><span class="subtitle">ENTRE EM</span> <hr class="hr-25">
         </div>
-        <form class="form-bordered" action="">
+        <form class="form-bordered" id="contact-form" action="mail.php">
         <div class="row mt-5">
                 <div class="col-md">
-                  <input id="name" class="form-control mb-4" type="text" placeholder="NOME">
-                  <input id="sub" class="form-control mb-4" type="text" placeholder="ASSUNTO">
-                  <input id="phone" class="form-control mb-4" type="text" placeholder="TELEFONE Ex: (55) 1234-5678">
-                  <input id="email" class="form-control mb-4" type="email" placeholder="E-MAIL">
+                  <input name="name" class="form-control mb-4" type="text" placeholder="NOME" required>
+                  <input name="sub" class="form-control mb-4" type="text" placeholder="ASSUNTO" required>
+                  <input name="phone" id="phone" class="form-control mb-4" type="text"   placeholder="TELEFONE Ex: (55) 91234-5678" required>
+                  <input name="email" class="form-control mb-4" type="email"  placeholder="E-MAIL" required>
                 </div>
                 <div class="col-md">
-                  <textarea id="message" class="form-control" rows="8" placeholder="MENSAGEM"></textarea>
+                  <textarea id="message" class="form-control" name="message" rows="8" placeholder="MENSAGEM" required></textarea>
                 </div>
               </div>
               <button type="submit" class="btn btn-outline-danger btn-lg mt-3 pr-3 pl-3">ENVIAR</button>
+              <p id="return-message" class="lead text-danger"></p>
             </form>
       </div>
     </section>
-    <script src="js/validation.js"></script>

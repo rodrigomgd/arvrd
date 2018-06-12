@@ -144,7 +144,8 @@ h2 {
   color: #fff; }
   .form-bordered input:focus, .form-bordered textarea:focus {
     background-color: transparent;
-    outline: none; }
+    outline: none;
+    color: #fff; }
   .form-bordered input::placeholder, .form-bordered textarea::placeholder {
     color: rgba(255, 255, 255, 0.5); }
 
