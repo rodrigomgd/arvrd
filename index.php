@@ -56,7 +56,7 @@
                     <h2>ACREDITAMOS QUE A GASTRONOMIA É A MELHOR FORMA DE EXPRESSÃO</h2>
                     <p class="">É ATRAVÉS DELA QUE AS PESSOAS PODEM CONHECER O MUNDO E A SI MESMAS </p>
                     <div class="p-5">
-                            <a href="/saiba-mais" class="btn btn-lg btn-outline-danger ">SAIBA MAIS</a>
+                            <a href="/sobre" class="btn btn-lg btn-outline-danger ">SAIBA MAIS</a>
                           </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ del = require('del'),
 gulp = require('gulp'),
 htmlmin = require('gulp-htmlmin'),
 runSequence = require('run-sequence'),
-uglify = require('gulp-uglify'),
+uglify = require('gulp-uglify-es').default,
 browserSync = require('browser-sync').create(),
 imagemin = require('gulp-imagemin'),
 args = ['**/*.php','**/js/*.js','**/css/*.css'];
@@ -46,7 +46,7 @@ gulp.task('styles', () => {
       .pipe(gulp.dest('dist/css'))
   });
 
-  gulp.task('scripts', function() {
+  gulp.task('scripts', () => {
     return gulp.src('js/*.js')
       // Minify the file
       .pipe(uglify())
