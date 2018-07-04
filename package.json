@@ -8,6 +8,7 @@
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-uglify-es": "^1.0.4",
+    "imagemin-pngquant": "^5.1.0",
     "run-sequence": "^2.2.1"
   },
   "dependencies": {

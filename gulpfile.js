@@ -9,6 +9,7 @@ runSequence = require('run-sequence'),
 uglify = require('gulp-uglify-es').default,
 browserSync = require('browser-sync').create(),
 imagemin = require('gulp-imagemin'),
+imageminPngQuant = require('imagemin-pngquant'),
 args = ['**/*.php','**/js/*.js','**/css/*.css'];
 
 const AUTOPREFIXER_BROWSERS = [
@@ -32,7 +33,7 @@ gulp.task('serve',()=>{
 
 gulp.task('images', () =>
     gulp.src('img/*')
-        .pipe(imagemin())
+        .pipe(imagemin([imageminPngQuant()]))
         .pipe(gulp.dest('dist/img'))
 );
 
@@ -55,24 +56,33 @@ gulp.task('styles', () => {
   });
 
   // Gulp task to minify HTML files
-gulp.task('pages', () => {
-   return gulp.src(['./*.php','template-parts/*.php'])
+gulp.task('pages-1', () => {
+   return gulp.src('./*.php')
       .pipe(htmlmin({
         collapseWhitespace: true,
         removeComments: true
       }))
       .pipe(gulp.dest('dist'));
   });
+gulp.task('pages-2', () => {
+   return gulp.src('template-parts/*.php')
+      .pipe(htmlmin({
+        collapseWhitespace: true,
+        removeComments: true
+      }))
+      .pipe(gulp.dest('dist/template-parts'));
+  });
 
   // Clean output directory
 gulp.task('clean', () => del(['dist']));
 
 // Gulp task to minify all files
-gulp.task('default', ['clean'], () => {
+gulp.task('default', () => {
   runSequence(
     'styles',
     'scripts',
-    'pages',
+    'pages-1',
+    'pages-2',
     'images'
   );
 });

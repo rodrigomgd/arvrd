@@ -23,13 +23,10 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/slider1.png" alt="Primeiro slide">
+                            <img class="d-block w-100" src="img/slider-1.png" alt="Primeiro slide">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="img/slider1.png" alt="Segundo slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="img/slider1.png" alt="Terceiro slide">
+                            <img class="d-block w-100" src="img/slider-2.png" alt="Segundo slide">
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -55,7 +52,7 @@
                 <div class="col text-center">
                     <h2>ACREDITAMOS QUE A GASTRONOMIA É A MELHOR FORMA DE EXPRESSÃO</h2>
                     <p class="">É ATRAVÉS DELA QUE AS PESSOAS PODEM CONHECER O MUNDO E A SI MESMAS </p>
-                    <div class="p-5">
+                          <div class="pt-5">
                             <a href="/sobre" class="btn btn-lg btn-outline-danger ">SAIBA MAIS</a>
                           </div>
                 </div>

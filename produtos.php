@@ -21,7 +21,7 @@
 <!--HEADER -->
 <section class="container-fluid section-bg-1">
         <div class="container p-5 text-center">
-            <div class="p-5">
+            <div class="pt-5 pb-5">
                 <img src="img/ramo.png" alt="Logo ramo" class="img-fluid">
                 <h2>PRODUTOS</h2>
                 <hr class="hr-25"><span class="subtitle"> CONHEÇA </span> <hr class="hr-25">
@@ -57,11 +57,11 @@
                 <?php $i++; endforeach; ?>
             </div>
             <a class="carousel-control-prev" href="#ProductCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
                 <span class="sr-only">Anterior</span>
             </a>
             <a class="carousel-control-next" href="#ProductCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
                 <span class="sr-only">Próximo</span>
             </a>
         </div>
@@ -69,7 +69,7 @@
             <h2>MAIS PRODUTOS</h2>
             <div class="row justify-content-around pr-4 pl-4">
                 <?php $i=0; foreach($produtos as $produto) : ?>
-                <div data-target="#ProductCarousel" data-slide-to=<?=$i?> class="img-product-col position-relative mb-5">
+                <div data-target="#ProductCarousel" data-slide-to="<?php echo $i?>" class="img-product-col position-relative mb-5">
                 <img src="<?= $produto['img'] ?>" class="img-fluid" alt="imagem de produto">
                 <span class="img-product-name"><?= $produto['nome'] ?></span>
                 </div>
