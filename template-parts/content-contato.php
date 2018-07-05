@@ -5,7 +5,7 @@
             <img src="img/ramo.png"  class="img-fluid" alt="">
             <h2>CONTATO</h2>   
             <hr class="hr-25"><span class="subtitle">ENTRE EM</span> <hr class="hr-25">
-            <form class="form-bordered" id="contact-form" action="mail.php">
+            <form class="form-bordered" id="contact-form" action="mail.php" method="post">
             <div class="row mt-5">
                     <div class="col-md">
                       <input name="name" class="form-control mb-4" type="text" placeholder="NOME" required>
