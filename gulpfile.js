@@ -57,7 +57,7 @@ gulp.task('styles', () => {
 
   // Gulp task to minify HTML files
 gulp.task('pages-1', () => {
-   return gulp.src('./*.php')
+   return gulp.src(['./*.php','./*.html'])
       .pipe(htmlmin({
         collapseWhitespace: true,
         removeComments: true
