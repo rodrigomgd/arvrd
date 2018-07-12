@@ -24,7 +24,7 @@ $email_subject = "Formulário de contato do site. Cliente: ".$name.".";
 $message = $_POST['message'];
 	
 // Create the email and send the message
-$to = 'rodrigo@megustadigital.com.br'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'contato@auraverde.com.br'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 
 $email_body = "Detalhes: <br> Nome: ".$name."<br> Assunto: ".$sub."<br> Telefone: ".$phone." <br> Email: ".$email_address." <br> Mensagem: <br> ".$message;
 
