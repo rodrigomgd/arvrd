@@ -7,7 +7,7 @@
             <div class="col-md-5">
                 <!-- <p><span class="text-gray">SEDE: </span>SÍTIO ÁGUAS CLARAS</p> -->
                 <p><span class="text-gray">SEDE: </span>RUA PRINCIPAL S/N , MONTE BONITO, PELOTAS - RS</p>
-                <p><span class="text-gray">LIGUE: </span>(53) 98135.0830</p>
+                <p><span class="text-gray">LIGUE: </span>(53) 98107.5212 </p>
                 <p><span class="text-gray">E-MAIL: </span>CONTATO@AURAVERDE.COM.BR</p>
                 <span><a class="pr-2" target="_blank" href="https://www.facebook.com/auraverdealimentos"><img src="img/facebook.png" alt="Link Facebook"></a>
                 <a class="p-2" target="_blank" href="https://www.instagram.com/auraverdealimentos"><img src="img/instagram.png" alt="Link Instagram"></a></span>

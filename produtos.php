@@ -50,7 +50,7 @@
                                 <p><?= $produto['ingredientes'] ?></p>
                                 <p><?= $produto['obs'] ?></p>
                                 <p><?= $produto['peso'] ?></p>
-                                <a href="<?= $produto['url'] ?>" class="btn btn-outline-danger pl-5 pr-5">COMPRAR</a>
+                                <a href="<?= $produto['url'] ?>" class="btn btn-outline-danger pl-5 pr-5">VER NA LOJA</a>
                             </div>
                         </div>
                     </div>
