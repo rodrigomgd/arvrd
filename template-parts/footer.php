@@ -16,3 +16,13 @@
     </div>
     <p class="copyright text-center p-2">&#169 COPYRIGHT. DESENVOLVIDO POR <a href="http://megusta.com.br">MEGUSTA DIGITAL</a></p>
 </footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122814100-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122814100-1');
+</script>
